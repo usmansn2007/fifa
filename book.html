@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>App Store Clone</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f5f5f5;
+    }
+
+    header {
+        background: #1db954;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-box input {
+        padding: 8px;
+        width: 250px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .app-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+    }
+
+    .app-card {
+        background: white;
+        border-radius: 12px;
+        padding: 15px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .app-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 18px;
+    }
+
+    .app-name {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    .app-category {
+        color: #777;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .install-btn {
+        background: #1db954;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .install-btn:hover {
+        background: #17a34a;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h2>My App Store</h2>
+    <div class="search-box">
+        <input type="text" placeholder="Search apps...">
+    </div>
+</header>
+
+<div class="container">
+    <h3 class="section-title">Popular Apps</h3>
+
+    <div class="app-grid">
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/80" alt="App">
+            <div class="app-name">Chat App</div>
+            <div class="app-category">Communication</div>
+            <button class="install-btn">Install</button>
+        </div>
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/80" alt="App">
+            <div class="app-name">Music Player</div>
+            <div class="app-category">Music</div>
+            <button class="install-btn">Install</button>
+        </div>
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/80" alt="App">
+            <div class="app-name">Photo Editor</div>
+            <div class="app-category">Photography</div>
+            <button class="install-btn">Install</button>
+        </div>
+
+        <div class="app-card">
+            <img src="https://via.placeholder.com/80" alt="App">
+            <div class="app-name">Game Zone</div>
+            <div class="app-category">Games</div>
+            <button class="install-btn">Install</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
+
